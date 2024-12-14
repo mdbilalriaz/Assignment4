@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Management Interface</h1>
+        <form id="dataForm">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" placeholder="Enter ID">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name">
+
+            <label for="value">Value:</label>
+            <input type="text" id="value" name="value" placeholder="Enter Value">
+
+            <button type="button" onclick="addData()">Add</button>
+            <button type="button" onclick="updateData()">Update</button>
+            <button type="button" onclick="deleteData()">Delete</button>
+        </form>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody id="dataList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="javaScript.js"></script>
+</body>
+</html>
